@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.khoa1.drontime.ThemRecordActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/toolbar">
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_textview_bottom_border"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/imageIconTieuDe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/title_2"/>
+                <EditText
+                    android:id="@+id/edTieuDe"
+                    android:layout_toRightOf="@id/imageIconTieuDe"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:padding="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:background="@android:color/transparent"
+                    android:hint="Tiêu Đề"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_textview_bottom_border"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageIconVi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/account_2"/>
+                <TextView
+                    android:id="@+id/tvChonBenhNhan"
+                    android:layout_toRightOf="@id/imageIconVi"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:padding="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+
+                    android:text="Chọn Bệnh Nhân"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_textview_bottom_border"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgIconNgay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/calendar"/>
+                <TextView
+                    android:id="@+id/tvChonNgay"
+                    android:layout_toRightOf="@id/imgIconNgay"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:padding="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Chọn ngày"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_textview_bottom_border"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgIconGio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/clock_alarm"/>
+
+                <TextView
+                    android:id="@+id/tvChonGio"
+                    android:layout_toRightOf="@id/imgIconGio"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:padding="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Chọn giờ"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_textview_bottom_border"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBoxTrangThai"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:button="@null"
+                    android:background="?android:attr/listChoiceIndicatorMultiple"/>
+
+                <TextView
+                    android:id="@+id/tvTrangThai"
+                    android:layout_toRightOf="@id/checkBoxTrangThai"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:padding="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Đã khám"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_textview_bottom_border"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edNoiDung"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:background="@drawable/custom_textview_bottom_border"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:hint="Nội dung"
+                    android:lines="6"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

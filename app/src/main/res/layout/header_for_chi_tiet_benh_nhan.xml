@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.khoa1.drontime.ChiTietBenhNhanActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/groupViewOverView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/custom_textview_bottom_border"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/imgHinhAnh"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:id="@+id/imgTenBenhNhan"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/account"
+                    android:scaleType="center"/>
+                <TextView
+                    android:id="@+id/tvTenBenhNhan"
+                    android:layout_toEndOf="@id/imgTenBenhNhan"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Phạm Thu Thảo"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_weight="4"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:id="@+id/imgCalendar"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/calendar"
+                    android:scaleType="fitCenter"/>
+                <TextView
+                    android:id="@+id/tvCalendar"
+                    android:layout_toEndOf="@id/imgTrangThai"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="24/12/1997"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_weight="4"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:id="@+id/imgSex"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/sex_female"
+                    android:scaleType="fitCenter"/>
+                <TextView
+                    android:id="@+id/tvSex"
+                    android:layout_toEndOf="@id/imgTrangThai"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Nữ"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_weight="4"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/groupViewDetail"
+        android:layout_below="@id/groupViewOverView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/custom_bottom_border"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal" >
+            <ImageView
+                android:id="@+id/imgDiaChi"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/home_address"
+                android:scaleType="fitCenter"/>
+            <TextView
+                android:id="@+id/tvDiaChi"
+                android:layout_toEndOf="@id/imgDiaChi"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="09 Hoàng Diệu 2, Linh Trung, Quận Thủ Đức"
+                android:textSize="16sp"
+                android:layout_weight="4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal" >
+            <ImageView
+                android:id="@+id/imgEmail"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/email_icon"
+                android:scaleType="fitCenter"/>
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_toEndOf="@id/imgEmail"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="phamthuthao@gmail.com"
+                android:textSize="16sp"
+                android:layout_weight="4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal" >
+            <ImageView
+                android:id="@+id/imgPhone"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/phone_icon"
+                android:scaleType="fitCenter"/>
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_toEndOf="@id/imgEmail"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0163456789"
+                android:textSize="16sp"
+                android:clickable="true"
+                android:layout_weight="4"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
