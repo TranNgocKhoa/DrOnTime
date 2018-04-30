@@ -48,7 +48,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Phạm Thu Thảo"
+                    android:text="Cao Nguyen Vu Toan"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:layout_weight="4"/>
@@ -157,7 +157,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="phamthuthao@gmail.com"
+                android:text=""
                 android:textSize="16sp"
                 android:layout_weight="4"/>
 
