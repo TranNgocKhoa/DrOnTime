@@ -73,7 +73,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="24/12/1997"
+                    android:text="10/09/1997"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:layout_weight="4"/>
@@ -133,7 +133,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="09 Hoàng Diệu 2, Linh Trung, Quận Thủ Đức"
+                android:text="Quận Thủ Đức"
                 android:textSize="16sp"
                 android:layout_weight="4"/>
 
